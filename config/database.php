@@ -31,6 +31,64 @@ return [
 
     'connections' => [
 
+        'rs_master' => [
+            'driver' => 'mysql',
+            'host' => env('DB_RS_MASTER_HOST', '192.168.2.100'),
+            'port' => env('DB_RS_MASTER_PORT', '3306'),
+            'database' => env('DB_RS_MASTER_DATABASE', 'master'),
+            'username' => env('DB_RS_MASTER_USERNAME', 'readonlysimgos'),
+            'password' => env('DB_RS_MASTER_PASSWORD', '2#Hello@it'),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
+        // DB Operasional PENDAFTARAN
+        'rs_pendaftaran' => [
+            'driver' => 'mysql',
+            'host' => env('DB_RS_PENDAFTARAN_HOST', '192.168.2.100'),
+            'port' => env('DB_RS_PENDAFTARAN_PORT', '3306'),
+            'database' => env('DB_RS_PENDAFTARAN__DATABASE', 'pendaftaran'),
+            'username' => env('DB_RS_PENDAFTARAN_USERNAME', 'readonlysimgos'),
+            'password' => env('DB_RS_PENDAFTARAN_PASSWORD', '2#Hello@it'),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
+        // DB Operasional APLIKASI
+        'rs_aplikasi' => [
+            'driver' => 'mysql',
+            'host' => env('DB_RS_APLIKASI_HOST', '192.168.2.100'),
+            'port' => env('DB_RS_APLIKASI_PORT', '3306'),
+            'database' => env('DB_RS_APLIKASI_DATABASE', 'aplikasi'),
+            'username' => env('DB_RS_APLIKASI_USERNAME', 'readonlysimgos'),
+            'password' => env('DB_RS_APLIKASI_PASSWORD', '2#Hello@it'),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+        // DB LAPORAN
+        'rs_laporan' => [
+            'driver' => 'mysql',
+            'host' => env('DB_RS_LAPORAN_HOST', '192.168.2.100'),
+            'port' => env('DB_RS_LAPORAN_PORT', '3306'),
+            'database' => env('DB_RS_LAPORAN_DATABASE', 'laporan'),
+            'username' => env('DB_RS_LAPORAN_USERNAME', 'readonlysimgos'),
+            'password' => env('DB_RS_LAPORAN_PASSWORD', '2#Hello@it'),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),
