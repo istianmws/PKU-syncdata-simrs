@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 
-class SyncStaging extends Command
+class SyncKunjunganByDate extends Command
 {
     protected $signature = 'app:sync-kunjungan-by-date';
     protected $description = 'Sinkronisasi tabel dari DB operasional ke DB staging dengan metode append-only berdasarkan waktu MASUK';
